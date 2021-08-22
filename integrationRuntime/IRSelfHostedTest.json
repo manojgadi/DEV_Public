@@ -1,0 +1,6 @@
+{
+	"name": "IRSelfHostedTest",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
