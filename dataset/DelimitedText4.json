@@ -5,11 +5,20 @@
 			"referenceName": "lnlakebinary",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"OutFileName": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().OutFileName",
+					"type": "Expression"
+				},
 				"fileSystem": "ouputlake"
 			},
 			"columnDelimiter": ",",
