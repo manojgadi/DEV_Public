@@ -23,6 +23,7 @@
 				"fileSystem": "inputlake"
 			},
 			"columnDelimiter": ",",
+			"encodingName": "UTF-8",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": ""

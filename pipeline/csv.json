@@ -1,6 +1,50 @@
 {
 	"name": "csv",
 	"properties": {
+		"activities": [
+			{
+				"name": "DataFlowCSV",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "csv",
+						"type": "DataFlowReference",
+						"datasetParameters": {
+							"source1": {
+								"FileName": {
+									"value": "@variables('FileName')",
+									"type": "Expression"
+								}
+							},
+							"sink1": {
+								"TableName": "EmpCSV.csv",
+								"SchemaName": "dbo"
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"variables": {
+			"FileName": {
+				"type": "String",
+				"defaultValue": "EmpCSV.csv"
+			}
+		},
 		"annotations": []
 	}
 }
