@@ -26,7 +26,7 @@
 					"name": "DerivedColumn1"
 				}
 			],
-			"script": "source(output(\n\t\tEmpId as short,\n\t\t{Emp Name} as string,\n\t\t{Emp DOB} as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tpartitionBy('hash', 1)) ~> source1\nsource1 derive({Emp DOB} = toDate({Emp DOB},'yyyy-MM-dd')) ~> DerivedColumn1\nDerivedColumn1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError',\n\tmapColumn(\n\t\tEmpId,\n\t\t{Emp Name},\n\t\t{Emp DOB}\n\t),\n\tpartitionBy('hash', 1)) ~> sink1"
+			"script": "source(output(\n\t\tEmpId as short,\n\t\t{Emp Name} as string,\n\t\t{Emp DOB} as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tpartitionBy('hash', 1)) ~> source1\nsource1 derive({Emp DOB} = toDate({Emp DOB},'yyyy-MM-dd')) ~> DerivedColumn1\nDerivedColumn1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError',\n\tmapColumn(\n\t\tEmpId,\n\t\tEmpName = {Emp Name},\n\t\tEmpDOB = {Emp DOB}\n\t),\n\tpartitionBy('hash', 1)) ~> sink1"
 		}
 	}
 }
