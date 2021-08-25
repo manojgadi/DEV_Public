@@ -40,6 +40,10 @@
 			{
 				"name": "EmpDOB",
 				"type": "String"
+			},
+			{
+				"name": "State",
+				"type": "String"
 			}
 		]
 	}
