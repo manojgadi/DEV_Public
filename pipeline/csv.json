@@ -19,11 +19,8 @@
 						"referenceName": "csv",
 						"type": "DataFlowReference",
 						"datasetParameters": {
-							"source1": {
-								"FileName": {
-									"value": "@variables('FileName')",
-									"type": "Expression"
-								}
+							"source11": {
+								"FileName": "EmpCSV.csv"
 							},
 							"sink1": {
 								"TableName": "EmpCSV",
