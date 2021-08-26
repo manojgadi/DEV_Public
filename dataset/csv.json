@@ -25,26 +25,9 @@
 			"columnDelimiter": ",",
 			"encodingName": "UTF-8",
 			"escapeChar": "\\",
-			"firstRowAsHeader": true,
+			"firstRowAsHeader": false,
 			"quoteChar": ""
 		},
-		"schema": [
-			{
-				"name": "EmpId",
-				"type": "String"
-			},
-			{
-				"name": "EmpName",
-				"type": "String"
-			},
-			{
-				"name": "EmpDOB",
-				"type": "String"
-			},
-			{
-				"name": "State",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
