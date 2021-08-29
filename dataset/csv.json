@@ -23,7 +23,7 @@
 			},
 			"columnDelimiter": ",",
 			"encodingName": "UTF-8",
-			"escapeChar": "\\",
+			"escapeChar": "",
 			"firstRowAsHeader": false,
 			"quoteChar": ""
 		},
