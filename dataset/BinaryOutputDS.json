@@ -1,5 +1,5 @@
 {
-	"name": "Binary1",
+	"name": "BinaryOutputDS",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "lnlakebinary",
