@@ -1,5 +1,5 @@
 {
-	"name": "EmployeeDynamic",
+	"name": "EmployeeDynamicCSV",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "lnlakebinary",
