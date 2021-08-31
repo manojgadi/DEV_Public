@@ -15,34 +15,7 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [
-			{
-				"name": "ID",
-				"type": "int",
-				"precision": 10
-			},
-			{
-				"name": "EmpName",
-				"type": "varchar"
-			},
-			{
-				"name": "EmpId",
-				"type": "int",
-				"precision": 10
-			},
-			{
-				"name": "DOB",
-				"type": "datetime",
-				"precision": 23,
-				"scale": 3
-			},
-			{
-				"name": "Num",
-				"type": "decimal",
-				"precision": 10,
-				"scale": 2
-			}
-		],
+		"schema": [],
 		"typeProperties": {
 			"schema": {
 				"value": "@dataset().SchemaName",
