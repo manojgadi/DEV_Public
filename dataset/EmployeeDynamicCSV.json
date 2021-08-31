@@ -27,27 +27,6 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "EmpId",
-				"type": "String"
-			},
-			{
-				"name": "EmpName",
-				"type": "String"
-			},
-			{
-				"name": "DOB",
-				"type": "String"
-			},
-			{
-				"name": "Num",
-				"type": "String"
-			},
-			{
-				"name": "Num1",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
